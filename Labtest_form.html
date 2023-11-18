@@ -1,0 +1,74 @@
+
+<head>
+    <title>Labtest_form</title>
+</head>
+<link rel="stylesheet" href="labtest.css">
+<body>
+    
+    <form action=""><div class="style">
+       <h2>Lab Tests</h2>
+       
+       <p>Book lab tests at Home from Apollo Diagnostics</p>
+        <div><label>Patient Name/ID:</label></div>
+        <input type="text">
+        <p>
+        </p>
+        <div><label for="test-categories">Select Test Category:</label></div>
+    <select id="test-categories">
+        <option value="blood">Blood Tests</option>
+        <option value="urine">Urine Tests</option>
+        <option value="full_body_checkup">General Tests</option>
+        <option value="Diabetes">Diabetes tests</option>
+        <option value="Covid_19">Covid tests</option>
+    </select>
+    <p></p>
+
+    <div><label for="test-list">Select Test:</label></div>
+    <select id="test-list">
+    </select>
+    
+
+    <script>
+        const testCategoriesDropdown = document.getElementById("test-categories");
+        const testListDropdown = document.getElementById("test-list");
+        const testsByCategory = {
+            blood: ["Complete Blood Count", "Blood Glucose", "Cholesterol"],
+            urine: ["Creatinine", "Urine Culture", "Uric acid"],
+            full_body_checkup: ["general"],
+            Diabetes: ["insulin","Lipid Profile","Glucose(fasting)"],
+            Covid_19: ["Ferritin","RTPCR","D-Dimer"]
+
+        };
+
+        testCategoriesDropdown.addEventListener("change", function() {
+            const selectedCategory = testCategoriesDropdown.value;
+            const tests = testsByCategory[selectedCategory];
+
+            testListDropdown.innerHTML = "";
+
+            tests.forEach(test => {
+                const testElement = document.createElement("option");
+                testElement.value = test;
+                testElement.textContent = test;
+                testListDropdown.appendChild(testElement);
+            });
+        });
+
+        testCategoriesDropdown.dispatchEvent(new Event("change"));
+    </script>
+        <p>
+        </p>
+        <div><label>Doctor handling the test(Enter ID):</label></div>
+        <input type="number">
+        <p>
+        </p>
+        <div><button type="button">Book</button>
+    </div>
+    <div class="img-container">
+        <img src="labtest2.jpg" width="800" height="100">
+    </div>
+</form>
+        
+        
+</body>
+</html>

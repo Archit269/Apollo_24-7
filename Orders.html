@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Orders</title>
+    <link rel="stylesheet" href="Orders.css">
+</head>
+<body>
+    <img src="pharma.jpg" width="270" height="250">
+    
+
+    <form action="" id="Order_Form"><div class="style">
+        <h2>Welcome to Apollo Pharmacy</h2>
+        <div><label>Name/ID:</label></div>
+        <input type="text">
+        <p></p>
+        <div><label>Date:</label></div>
+        <input type="date">
+        <p>
+        </p>        
+        <label for="order_status">Status:</label>
+        <select id="order_status" name="order_status">
+            <option value="Pending">Pending</option>
+            <option value="Processing">Processing</option>
+            <option value="Cancelled">Cancelled</option>
+            <option value="Completed">Completed</option>
+        </select>
+        <p>
+        </p>
+        
+        <div><label for="total_amount">Total amount (Rs):</label></div>
+        <input type="number">
+        
+        <hr>
+        <h3>Shipping Address</h3>
+        <label><input type="radio" name="shipping_option" value="current_location">Current location</label>
+        <p>OR</p>
+        <p>Enter address</p>
+        <textarea id="custom_shipping_address" name="custom_shipping_address" rows="4" cols="50"></textarea><div>
+        
+        <p></p>
+        
+        <input type="submit" value="Submit Order">
+        </form>
+    </div>
+    <img src="medicine.jpg" width="1000" height="200" style="transform: translate(-300px,100px);">
+</body>
+</html>

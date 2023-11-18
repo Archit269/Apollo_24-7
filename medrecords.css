@@ -1,0 +1,19 @@
+.style{
+    background-color: rgba(87, 89, 116, 0.5);
+    width: 400px;
+    border-radius: 10px;
+    padding: 5px 10px 15px 20px;
+    top: 30%;
+    left: 35%;
+    position: absolute;
+}
+
+button{
+    background-color: orange;
+    align-content: center;
+    border-radius: 5px;
+}
+
+body{
+    background-color: rgb(227, 186, 126);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="doctor.css">
+    <title>Consultation</title>
+</head>
+<body>
+  <div class="img-container">
+  <img src="Apollo-247-Onl-1.webp">
+  </div>
+    <div id="bookingForm" class="container">
+        <h2>Consultation Booking</h2>
+        <form id="consultationBookingForm">
+          <label for="doctor">Select Doctor:</label>
+          <select id="doctor" name="doctor" required>
+            <option value="" disabled selected>Select doctor</option>
+            <option>Dr. Anshul Warman</option>
+            <option>Dr. Deepak G</option>
+            <option>Dr.Haresh Patel</option>
+            <option>Dr. A Anitha</option>
+            <option>Dr. Yogesh Batra</option>           
+          </select>
+          <p></p>
+    
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" name="date" required>
+          <p></p>
+          <label for="time">Preferred Time:</label>
+          <input type="time" id="time" name="time" required>
+    
+          <button type="button">Confirm Booking</button>
+        </form>
+      </div>
+    
+      <div id="bookingConfirmation" class="hidden">
+        <h2>Booking Confirmation</h2>
+        <ul>
+          <li id="confirmationSymptoms"></li>
+          <li id="confirmationDoctor"></li>
+          <li id="confirmationDate"></li>
+          <li id="confirmationTime"></li>
+        </ul>
+        <p>Your consultation has been booked successfully!</p>
+      </div>
+    </div>
+</body>
+</html>

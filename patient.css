@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    
+    
+    
+}
+body{
+    background-color: #DCDFCE;
+}
+.style{
+    width: 45%;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #475c657b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20%;
+}
+
+.custom{
+    width: 70%;   
+    margin-left: -60%;
+    margin-top: 60%;
+    
+    
+}
+.custom button{
+    background-color: #335979;
+    border-radius: 5px;
+    padding: 10px 20px;    
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+  }
+
+button{
+    background-color: #fed984;
+    border-radius: 5px;
+    padding: 10px 20px;
+    
+    cursor: pointer;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}

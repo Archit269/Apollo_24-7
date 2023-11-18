@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="symptoms.css">
+  <title>Consultation Booking</title>
+</head>
+<body>
+  <div class="container">
+  <div class="intro-box">
+    <h1>Ask Apollo</h1>
+    <h3>Hi There!</h3>
+    <p>Ask Apollo about what's causing your symptoms and our symptom checker will help you start feeling better again!</p>
+  </div>
+    <form id="symptomsForm">
+      <div><label>Is this for self or someone else?</label></div>
+      <label><input type="radio" name="options" value="1">Self</label>
+      <label><input type="radio" name="options" value="2">Someone else</label>
+      <p></p>
+      <div><label>Name:</label></div>
+      <input type="text">
+      <p></p>
+      <div><label>Age:</label></div>
+      <input type="number">
+      <p></p>
+      <div><label>Gender:</label></div>
+      <label><input type="radio" name="options" value="1">Male</label>
+      <label><input type="radio" name="options" value="2">Female</label>
+      <label><input type="radio" name="options" value="3">Others</label>
+      <p>
+      </p>
+      <div><label for="symptoms">Symptoms:</label></div>
+      <textarea id="symptoms" name="symptoms" rows="5" required></textarea>
+
+      <div><button type="button" onclick="proceedToBooking()">Proceed to Booking</button></div>
+    </form>
+
+    
+</body>
+</html>

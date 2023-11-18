@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Medical Documents</title>
+    <link rel="stylesheet" href="uploaddocs.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post" enctype="multipart/form-data">
+            <h2>Upload Medical Documents</h2>
+            <div>
+                <label for="patientID">Patient ID:</label>
+                <input type="text" id="patientID" name="patientID" required>
+            </div>
+            <p></p>
+            <div>
+                <label for="documentType">Select Document Type:</label>
+                <select id="documentType" name="documentType">
+                    <option value="prescription">Prescription</option>
+                    <option value="labReport">Lab Report</option>
+                    <option value="scan">Scan</option>
+                   
+                </select>
+            </div>
+            <p></p>
+            <div>
+                <label for="file">Choose File:</label>
+                <input type="file" id="file" name="file" accept=".pdf, .doc, .docx, .jpg, .jpeg, .png" required>
+            </div>
+            <p></p>
+            <button type="submit" onclick="window.location.href='http://127.0.0.1:5500/Apollo247/medrecords.html';">Upload</button>
+        </form>
+    </div>
+</body>
+</html>

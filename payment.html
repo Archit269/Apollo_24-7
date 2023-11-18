@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="payment.css">
+  <title>Order Confirmation</title>
+</head>
+<body>
+  <div class="style">
+    <h1>Payment Gateway</h1>
+    <form id="paymentInformationForm">
+      <label for="paymentOption">Select Payment Option:</label>
+      <div class="payment-options">
+        <input type="radio" id="creditCardOption" name="paymentOption" value="Credit Card" required>
+        <label for="creditCardOption">Credit Card</label>
+
+        <input type="radio" id="debitCardOption" name="paymentOption" value="Debit Card" required>
+        <label for="debitCardOption">Debit Card</label>
+
+        <input type="radio" id="upiOption" name="paymentOption" value="UPI" required>
+        <label>UPI</label>
+        <div><img src="payment2.jpg" width="300" height="60"></div>
+      <div><label>UPI ID:</label></div>
+      <input type="text">
+      
+      <div><label for="cardNumber">Card Number:</label></div>
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="**** **** **** ****">
+
+      <div><label for="expiryDate">Expiry Date:</label></div>
+      <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
+
+      <label for="cvv">CVV:</label>
+      <input type="text" style="width: 40px;" maxlength="3" id="cvv" name="cvv" placeholder="***">
+      <p></p>
+      <button type="button" >Proceed to Confirmation</button>
+    </form>
+
+    <div id="confirmation" class="hidden">
+      <h2>Order Confirmation</h2>
+      <ul>
+        <li id="confirmationMedicineA">MedicineA</li>
+        <li id="confirmationMedicineB">MedicineB</li>
+        <li id="confirmationMedicineC">MedicineC</li>
+        <li id="confirmationTotalCost">MedicineD</li>
+        <li><strong>Card Number:</strong> **** **** **** 1234</li>
+        <li><strong>Expiry Date:</strong> 12/23</li>
+      </ul>
+      <p>Your order has been confirmed! Order ID: 123456</p>
+      <button type="button">Pay</button>
+    </form>
+    </div>
+  </div>
+
+  
+</body>
+</html>

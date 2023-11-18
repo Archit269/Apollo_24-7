@@ -1,0 +1,36 @@
+body{
+    background-image: url(labtest3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.style{
+    background-color: rgba(220, 230, 229, 0.5);
+    width: 400px;
+    border-radius: 10px;
+    padding: 5px 10px 15px 20px;
+    top: 20%;
+    left: 35%;
+    position: absolute;
+    
+    
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20%;
+}
+
+select, input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

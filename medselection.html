@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <link rel="stylesheet" href="medselection.css">
+  <title>Medicine Order System</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Select Medicines</h1>
+    <form id="medicineSelectionForm">
+      <label for="medicineA">ORS Lemon Flavor</label>
+      <input type="number" id="medicineA" name="medicineA" min="0">
+
+      <label for="medicineB">Dispirin regular</label>
+      <input type="number" id="medicineB" name="medicineB" min="0">
+
+      <label for="medicineC">Apollo Life Cough Syrup</label>
+      <input type="number" id="medicineC" name="medicineC" min="0">
+
+      <label for="medicineD">Nasoclear Nasal Spray</label>
+      <input type="number" id="medicineC" name="medicineD" min="0">
+
+      <label for="medicineE">Citralka liquid</label>
+      <input type="number" id="medicineC" name="medicineE" min="0">
+
+      <button type="button" onclick="window.location.href='http://127.0.0.1:5500/Apollo247/payment.html';">Proceed to Payment</button>
+    </form>
+
+    <div id="orderSummary" class="hidden">
+      <h2>Order Summary</h2>
+      <ul>
+        <li id="summaryMedicineA"></li>
+        <li id="summaryMedicineB"></li>
+        <li id="summaryMedicineC"></li>
+        <li id="totalCost"></li>
+      </ul>
+    </div>
+  </div>
+
+  
+</body>
+</html>
+
+
+  

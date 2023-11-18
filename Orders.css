@@ -1,0 +1,14 @@
+.style{
+    background-color: rgba(68, 200, 178, 0.5);
+    width: 400px;
+    border-radius: 10px;
+    padding: 5px 10px 15px 20px;
+    top: 10%;
+    left: 35%;
+    bottom: 5%;
+    position: absolute;
+}
+
+body{
+    background-color: #FFE0D7;
+}
